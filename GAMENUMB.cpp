@@ -26,18 +26,18 @@ using namespace std;
 
 ll PowMod(ll n, ll m, ll md)
 {
-    // cout<<"n = "<<n<<" m = "<<m<<" md = "<<md<<endl;
+    
     ll ret = 1;
     ll a = m;
-    // ll md = mdd;
+    
     ll t;
-    // cout<<"a = "<<a<<" md = "<<md<<endl;
+    
     while (n > 0) {
         if (n & 1) ret = (md+((md+ret)%md)*1ull*((md+a)%md))%md;
         t = (md+a)%md;
-        // cout<<"t = "<<t<<endl;
+        
         a = (md+((t)*1ull*(t)))%md;
-        // if(a==0) return 0;
+        
         // cout<<"ret = "<<ret<<" a = "<<a<<endl;
         n >>= 1;
     }
