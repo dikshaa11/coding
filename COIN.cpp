@@ -45,11 +45,11 @@ ll coin(ll n) {
 
 int main() {
 	// int t;
-	// cin>>t;
+	
 	setv(dp,0);
 	cal();
 	ll answer,n;
-	// ll n;
+	
 	while(scanf("%lld",&n)>0) {
 		if(n<=100000001){
 			cout<<dp[n]<<endl;
