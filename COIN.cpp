@@ -45,7 +45,7 @@ ll coin(ll n) {
 
 int main() {
 	// int t;
-	// cin>>t;
+	
 	setv(dp,0);
 	cal();
 	ll answer,n;
