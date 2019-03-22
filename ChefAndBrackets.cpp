@@ -36,7 +36,7 @@ int main() {
 					j++;
 				}
 			} else {
-				// if(i<n-1)
+				
 				dp[i][i+k-1] += dp[i+1][i+k-1];
 			}
 			if(dp[i][i+k-1]==0) dp[i][i+k-1]=1;
