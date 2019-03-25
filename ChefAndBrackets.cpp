@@ -31,13 +31,12 @@ int main() {
 				while(j<i+k) {
 					if(a[i]==-a[j]) {
 						dp[i][i+k-1] += 2*(dp[i+1][j-1]*dp[j+1][i+k-1]);
-						/*dp[i][i+k-1] += 2*(dp[i+1][j-1]);
-						dp[i][i+k-1] += (dp[j+1][i+k-1]);*/
+						
 					}
 					j++;
 				}
 			} else {
-				// if(i<n-1)
+				
 				dp[i][i+k-1] += dp[i+1][i+k-1];
 			}
 			if(dp[i][i+k-1]==0) dp[i][i+k-1]=1;

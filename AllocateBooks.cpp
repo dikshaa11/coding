@@ -5,7 +5,7 @@
 
 using namespace std;
 
-//#define INT_MAX 2147483647
+
 
 bool ispossible(vector<int> a, long long int mid, int m,long long int mx)
 {

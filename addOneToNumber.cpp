@@ -36,8 +36,8 @@ vector<int> plusOne(vector<int> &A) {
 int main()
 {
      vector<int> a;
-    int x;
-    for(int i=0;i<12;i++)
+    int x,i;
+    for(i=0;i<12;i++)
     {
         cin>>x;
         a.push_back(x);
@@ -45,6 +45,6 @@ int main()
 
     vector<int> A = plusOne(a);
 
-     for(int i=0;i<A.size();i++)
+     for( i=0;i<A.size();i++)
     cout<<A[i]<<" ";
 }

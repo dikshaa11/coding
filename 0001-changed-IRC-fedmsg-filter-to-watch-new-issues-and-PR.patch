@@ -1,0 +1,26 @@
+From 3290f51b5bafcf05fa331ef524aa34b847379ed5 Mon Sep 17 00:00:00 2001
+From: Richa <richagautam208@gmail.com>
+Date: Wed, 6 Mar 2019 10:11:28 +0530
+Subject: [PATCH] changed IRC fedmsg filter to watch new issues and PRs only
+
+---
+ COIN.cpp | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+diff --git a/COIN.cpp b/COIN.cpp
+index 3806bca..269a48c 100644
+--- a/COIN.cpp
++++ b/COIN.cpp
+@@ -44,8 +44,7 @@ ll coin(ll n) {
+ 
+ 
+ int main() {
+-	// int t;
+-	// cin>>t;
++	
+ 	setv(dp,0);
+ 	cal();
+ 	ll answer,n;
+-- 
+2.7.4
+
